@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Avtivities.SplashScreenActivity">
+
+<!--
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="Welcome"
+            android:textSize="28sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:id="@+id/vdeveloper"
+            android:background="@color/white"
+            android:layout_width="170dp"
+            android:layout_height="3dp"/>
+
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="9 Square Property"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+-->
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/dimen15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dimen200dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/home_icon"
+            android:layout_width="@dimen/dimen180dp"
+            android:layout_height="@dimen/dimen180dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textAllCaps="false"
+            android:background="@drawable/gradient_bg"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/retry"
+            android:text="Retry"
+            android:layout_width="150dp"
+            android:layout_height="28dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:id="@+id/card"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:textColor="#D3000000"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:text="Rajat"
+            android:textSize="22dp"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

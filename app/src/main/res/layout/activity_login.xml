@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Avtivities.LoginActivity">
+
+
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:mwhCloseColor="@color/colorPrimaryDark"
+        app:mwhStartColor="@color/colorPrimaryDark" />
+
+<!--
+    <ImageView
+        android:layout_marginTop="@dimen/dimen60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dimen80dp"
+        android:layout_height="@dimen/dimen80dp"
+        android:src="@drawable/home_icon" />
+-->
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginTop="@dimen/dimen60dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/dimen8dp"
+        android:layout_width="@dimen/dimen90dp"
+        android:layout_height="@dimen/dimen90dp">
+
+        <ImageView
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/home_icon"
+            android:layout_width="@dimen/dimen80dp"
+            android:layout_height="@dimen/dimen80dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waveHeader"
+        android:layout_margin="@dimen/dimen10dp"
+        android:paddingLeft="@dimen/dimen15dp"
+        android:text="Login"
+        android:textSize="@dimen/textsize22sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:layout_below="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_margin="@dimen/dimen10dp"
+                android:id="@+id/ll_login_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+
+                    android:id="@+id/loginotp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/home_btn_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="@dimen/dimen10dp"
+                android:id="@+id/ll_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/home_btn_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/skip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Skip"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/other_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Other way..? "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Please make your registration first"
+                android:textColor="@color/yellow1"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="forgot"
+            android:text="Forgot Password"
+            android:textColor="@android:color/black"
+            android:textColorLink="#CF1B1B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="register"
+            android:text="Registration"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

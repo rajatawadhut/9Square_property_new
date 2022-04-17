@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A4E8EEE9"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.ShowUSerList">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewsearch"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imga"
+            android:src="@drawable/searchiccccc"
+            android:layout_width="120dp"
+            android:layout_height="90dp"/>
+        <TextView
+            android:textSize="21dp"
+            android:gravity="center"
+            android:textColor="#4E4E4E"
+            android:layout_gravity="center"
+            android:layout_below="@+id/imga"
+            android:text="No Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progresscustom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

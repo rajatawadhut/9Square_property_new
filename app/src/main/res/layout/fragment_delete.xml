@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.DeleteFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_bg"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/showimg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Delete"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/home_btn_bg"
+            android:id="@+id/deleteimg"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

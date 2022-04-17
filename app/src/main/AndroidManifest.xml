@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nine__square.property">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_home_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,UnusedAttribute">
+
+
+        <activity android:name="com.nine__square.property.Avtivities.ViewImageActivity" android:exported="false"/>
+        <activity android:name="com.nine__square.property.Avtivities.TermsAndConditionActivity" android:exported="false"/>
+        <activity android:name="com.nine__square.property.Avtivities.PrivacyPolicyActivity" android:exported="false"/>
+        <activity android:name="com.nine__square.property.Avtivities.AddImgActivity" android:exported="false"/>
+        <activity android:name="com.nine__square.property.Avtivities.BuyService2" android:exported="false"/>
+
+        <activity
+            android:exported="false"
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.LoginThroughOtpActivity"
+            android:theme="@style/AppThemeMaterial" />
+
+        <activity android:name="com.nine__square.property.Avtivities.ShowAdsActivity"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_map_key" />
+
+        <!--<meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_sFvWgD19j8g8M8" /> -->
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/api_razorpay_key" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:exported="false"
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+
+        <activity
+            android:exported="false"
+            android:name="com.razorpay.CheckoutActivity" />
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.nine__square.property.Avtivities.PlacePicker"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/api_map_key" />
+
+        </activity>
+
+
+        <activity
+            android:name="com.nine__square.property.Avtivities.SearchProject"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.SearchLocality"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.SearchState"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.ShowUSerList"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.OwnerBuilderDeveloperList"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <activity
+            android:name="com.nine__square.property.Avtivities.LeadSearch"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.Buyourservices"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.CallBackForm"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.TestimonialsActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppThemeMaterial" />
+        <activity
+            android:name="com.nine__square.property.Avtivities.ViewMoreActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:stopWithTask="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:exported="true"
+            android:name="com.nine__square.property.Avtivities.SplashScreenActivity"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.ShowSearchProperty"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.SearchCity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.ForgotPassword"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppThemeMaterial" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.RegistrationOTP"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppThemeMaterial" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.SearchProperty"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.MyPropertyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.DetailsPropertyShowActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.LatestActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.ShortlistedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppThemeMaterial" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.ContactActivity"
+            android:parentActivityName="com.nine__square.property.Avtivities.MainActivity" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.AboutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:parentActivityName="com.nine__square.property.Avtivities.MainActivity" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.RegistrationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppThemeMaterial" />
+        <activity
+            android:name="com.nine__square.property.AddPropertActivity.PropertyProfileInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.AddPropertActivity.Features"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.AddPropertActivity.Pricing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.AddPropertActivity.PropertyDetails"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.AddPropertActivity.Location"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.AddPropertActivity.BasicDetails"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.SettingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.ProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppThemeMaterial" />
+        <activity
+            android:exported="false"
+            android:name="com.nine__square.property.Avtivities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

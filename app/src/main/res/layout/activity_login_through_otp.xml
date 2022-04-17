@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.LoginThroughOtpActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="110dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/profile_image"
+                    android:layout_gravity="center"
+                    android:src="@drawable/apartment"
+                    android:background="@drawable/cardviewbg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:textSize="24sp"
+                    android:paddingTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OTP Verification"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/timer"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timer"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/resendotp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resend Otp"/>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/otp"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Enter OTP"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <Button
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_margin="60dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:text="Verify"
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

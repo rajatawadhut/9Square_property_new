@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval" >
+
+            <stroke android:width="@dimen/dimen1dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_add__24dp" />
+</layer-list>

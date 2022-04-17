@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flatlayout"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Q : "
+                android:textColor="#DB0C0C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/question"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="How are you??"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/answerlay"
+                android:paddingRight="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="A : "
+                    android:textColor="#40EC19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:text="I'm Fine...."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img"
+                    android:src="@drawable/personq"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+                <TextView
+                    android:textColor="@color/black2"
+                    android:textSize="14sp"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black2"
+                    android:id="@+id/name"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    android:text="Rajat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:background="@drawable/cardviewbg"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/reply"
+                    android:src="@drawable/reply"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/datavalue"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--<TextView-->
+<!--    android:paddingLeft="35dp"-->
+<!--    android:textSize="12sp"-->
+<!--    android:text="No Questions"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+</LinearLayout>

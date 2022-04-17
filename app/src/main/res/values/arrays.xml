@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="propertylistfor">
+        <item>Sell</item>
+        <item>Rent</item>
+        <item>Paying Guest</item>
+    </string-array>
+
+    <string-array name="subscription">
+        <item>Select</item>
+        <item>Post Free Property FreePlan 01</item>
+        <item>Post Free Property FreePlan 02</item>
+        <item>Post Property PaidPlan 01</item>
+    </string-array>
+
+
+    <string-array name="usertype">
+        <item>Select</item>
+        <item>Owner</item>
+        <item>Dealer</item>
+        <item>Builder</item>
+    </string-array>
+
+
+    <string-array name="units">
+        <item>Sq.Ft</item>
+        <item>Sq.yards</item>
+        <item>Sq.m</item>
+        <item>Acres</item>
+        <item>Marla</item>
+        <item>Cents</item>
+        <item>Bigha</item>
+        <item>Kottah</item>
+        <item>Kanal</item>
+        <item>Grounds</item>
+        <item>Ares</item>
+        <item>Biswa</item>
+        <item>Guntha</item>
+        <item>Aankadam</item>
+        <item>Hectares</item>
+        <item>Rood</item>
+        <item>Chataks</item>
+        <item>Perch</item>
+    </string-array>
+
+
+    <string-array name="widthunits">
+        <item>Meter</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>Select</item>
+        <item>1 Star</item>
+        <item>2 Star</item>
+        <item>3 Star</item>
+        <item>4 Star</item>
+        <item>5 Star</item>
+        <item>6 Star</item>
+        <item>7 Star</item>
+        <item>8 Star</item>
+        <item>9 Star</item>
+        <item>10 Star</item>
+    </string-array>
+
+    <string-array name="flooring">
+        <item>Select</item>
+        <item>Vitrified</item>
+        <item>Marble</item>
+        <item>Concrete</item>
+        <item>Ceramic</item>
+        <item>Polished Concrete</item>
+        <item>Mosaic</item>
+        <item>Wood</item>
+        <item>Granite</item>
+        <item>Spartex</item>
+        <item>Cement</item>
+        <item>Stone</item>
+        <item>Vinyl</item>
+        <item>IPSFinish</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="facing">
+        <item>Select</item>
+        <item>East</item>
+        <item>North-East</item>
+        <item>North</item>
+        <item>West</item>
+        <item>South</item>
+        <item>South-East</item>
+        <item>North-West</item>
+        <item>South-West</item>
+    </string-array>
+
+    <string-array name="lasttime">
+        <item>7 PM</item>
+        <item>8 PM</item>
+        <item>9 PM</item>
+        <item>10 PM</item>
+        <item>11 PM</item>
+        <item>12 AM</item>
+        <item>1 AM</item>
+        <item>2 AM</item>
+        <item>3 AM</item>
+        <item>24 x 7</item>
+    </string-array>
+
+    <string-array name="ownership">
+        <item>Freehold</item>
+        <item>Leasehold</item>
+        <item>Co-Operative Society</item>
+        <item>Power Of Attorney</item>
+    </string-array>
+
+    <string-array name="powerbackup">
+        <item>None</item>
+        <item>Partial</item>
+        <item>Full</item>
+    </string-array>
+
+    <string-array name="maintenance">
+        <item>Select</item>
+        <item>Monthly</item>
+        <item>Annually</item>
+        <item>One Time</item>
+        <item>Per Unit/Monthly</item>
+    </string-array>
+
+
+    <string-array name="categorytypeapartment">
+        <item>Select</item>
+        <item>Residential Apartment</item>
+        <item>Independent/Builder Floor</item>
+        <item>Studio Apartment</item>
+        <item>Serviced Apartments</item>
+    </string-array>
+
+
+    <string-array name="housevilla">
+        <item>Select</item>
+        <item>Independent House/Villa</item>
+        <item>Farm House</item>
+    </string-array>
+
+
+
+    <string-array name="office">
+        <item>Select</item>
+        <item>Ready to move office space</item>
+        <item>Bare shell office space</item>
+        <item>Co-working office space</item>
+    </string-array>
+
+
+    <string-array name="retail">
+        <item>Select</item>
+        <item>Commercial Shops</item>
+        <item>Commercial Showrooms</item>
+        <item>Space in Retail Mall</item>
+    </string-array>
+
+
+    <string-array name="land">
+        <item>Select</item>
+        <item>Commercial Land/Inst. Land</item>
+        <item>Agricultural/Farm Land</item>
+        <item>Industrial Lands/Plots</item>
+    </string-array>
+
+
+    <string-array name="industry">
+        <item>Select</item>
+        <item>Factory</item>
+        <item>Manufacturing</item>
+
+    </string-array>
+
+
+
+    <string-array name="storage">
+        <item>Select</item>
+        <item>Ware House</item>
+        <item>Cold Storage</item>
+
+    </string-array>
+
+
+    <string-array name="hospital">
+        <item>Select</item>
+        <item>Hotel/Resorts</item>
+        <item>Guest-House/Banquet-Hallsage</item>
+
+    </string-array>
+
+    <string-array name="pgno">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="bhk">
+        <item>Select</item>
+        <item>1 BHK</item>
+        <item>2 BHK</item>
+        <item>3 BHK</item>
+        <item>4 BHK</item>
+        <item>5 BHK</item>
+        <item>6 BHK</item>
+        <item>7 BHK</item>
+        <item>8 BHK</item>
+        <item>9 BHK</item>
+        <item>10 BHK</item>
+        <item>11 BHK</item>
+    </string-array>
+
+
+    <string-array name="furnish">
+        <item>Furnished</item>
+        <item>Semifurnished</item>
+        <item>Unfurnished</item>
+    </string-array>
+
+    <string-array name="availability">
+        <item>Under Construction</item>
+        <item>Ready To Move</item>
+    </string-array>
+
+    <string-array name="possession">
+        <item>Within 3 Months</item>
+        <item>By 2021</item>
+        <item>By 2022</item>
+        <item>By 2023</item>
+        <item>By 2024</item>
+        <item>By 2025</item>
+        <item>By 2026</item>
+        <item>By 2027</item>
+        <item>By 2028</item>
+        <item>By 2029</item>
+        <item>By 2030</item>
+    </string-array>
+
+
+
+    <string-array name="ageofproperty">
+        <item>0-1 Year Old Property</item>
+        <item>1-5 Year Old Property</item>
+        <item>5-10 Year Old Property</item>
+        <item>10+ Year Old Property</item>
+        <item>Ready To Move</item>
+    </string-array>
+
+    <string-array name="securitydeposite">
+        <item>Select</item>
+        <item>Fixed</item>
+        <item>Multiple Of Rent</item>
+    </string-array>
+    <string-array name="select">
+        <item>Select</item>
+    </string-array>
+
+
+    <string-array name="minpricebuy">
+        <item>Min</item>
+        <item>0</item>
+        <item>5 Lac</item>
+        <item>10 Lac</item>
+        <item>20 Lac</item>
+        <item>30 Lac</item>
+        <item>40 Lac</item>
+        <item>50 Lac</item>
+        <item>60 Lac</item>
+        <item>70 Lac</item>
+        <item>80 Lac</item>
+        <item>90 Lac</item>
+        <item>1 Cr</item>
+        <item>1.2 Cr</item>
+        <item>1.5 Cr</item>
+        <item>1.6 Cr</item>
+        <item>1.8 Cr</item>
+        <item>2 Cr</item>
+        <item>2.3 Cr</item>
+        <item>2.6 Cr</item>
+        <item>3 Cr</item>
+        <item>3.5 Cr</item>
+        <item>4 Cr</item>
+        <item>4.5 Cr</item>
+        <item>5 Cr</item>
+        <item>10 Cr</item>
+        <item>15 Cr</item>
+    </string-array>
+
+    <string-array name="maxpricebuy">
+        <item>Max</item>
+        <item>5 Lac</item>
+        <item>10 Lac</item>
+        <item>20 Lac</item>
+        <item>30 Lac</item>
+        <item>40 Lac</item>
+        <item>50 Lac</item>
+        <item>60 Lac</item>
+        <item>70 Lac</item>
+        <item>80 Lac</item>
+        <item>90 Lac</item>
+        <item>1 Cr</item>
+        <item>1.2 Cr</item>
+        <item>1.5 Cr</item>
+        <item>1.6 Cr</item>
+        <item>1.8 Cr</item>
+        <item>2 Cr</item>
+        <item>2.3 Cr</item>
+        <item>2.6 Cr</item>
+        <item>3 Cr</item>
+        <item>3.5 Cr</item>
+        <item>4 Cr</item>
+        <item>4.5 Cr</item>
+        <item>5 Cr</item>
+        <item>10 Cr</item>
+        <item>15 Cr</item>
+    </string-array>
+
+    <string-array name="minpricerent">
+        <item>Min</item>
+        <item>0</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>50000</item>
+        <item>60000</item>
+        <item>70000</item>
+        <item>80000</item>
+        <item>90000</item>
+        <item>1 Lac</item>
+        <item>1.5 Lac</item>
+        <item>2 Lac</item>
+        <item>4 Lac</item>
+        <item>7 Lac</item>
+        <item>10 Lac</item>
+    </string-array>
+
+    <string-array name="maxpricerent">
+        <item>Max</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>50000</item>
+        <item>60000</item>
+        <item>70000</item>
+        <item>80000</item>
+        <item>90000</item>
+        <item>1 Lac</item>
+        <item>1.5 Lac</item>
+        <item>2 Lac</item>
+        <item>4 Lac</item>
+        <item>7 Lac</item>
+        <item>10 Lac</item>
+    </string-array>
+
+    <string-array name="minpricepg">
+        <item>Min</item>
+        <item>0</item>
+        <item>4000</item>
+        <item>6000</item>
+        <item>8000</item>
+        <item>10000</item>
+        <item>12000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </string-array>
+
+    <string-array name="maxpricepg">
+        <item>Max</item>
+        <item>6000</item>
+        <item>8000</item>
+        <item>10000</item>
+        <item>12000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </string-array>
+
+
+</resources>

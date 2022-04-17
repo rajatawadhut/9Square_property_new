@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/cardviewbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/propertyimage"
+                    android:src="@drawable/villa"
+                    android:background="@drawable/border_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:background="@drawable/shortlistedbg"
+                    android:padding="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/shortlisted"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/shortlistedheart"
+                    />
+
+
+                <TextView
+                    android:paddingRight="3dp"
+                    android:textAlignment="center"
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="3dp"
+                    android:background="#4FD557"
+                    android:paddingLeft="2dp"
+                    android:src="@drawable/heart"
+                    android:text="Rent"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:background="#CE333030"
+                    android:layout_width="match_parent"
+                    android:layout_height="11sp">
+
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:textSize="8sp"
+                        android:text="   Posted On "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:textSize="8sp"
+                        android:id="@+id/date"
+                        android:text="Wed 27, 2020"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_below="@id/cardImage"
+                android:id="@+id/linearname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dimen10dp"
+                    android:paddingLeft="3dp"
+                    android:text="35 Lac"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:fontFamily="@font/s7"
+                    android:id="@+id/builtupa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price"
+                    android:paddingLeft="20dp"
+                    android:text="15000"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/dimen12dp"
+                    android:textStyle="bold" />
+                    <TextView
+                        android:fontFamily="@font/s7"
+                        android:textSize="@dimen/dimen12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black2"
+                        android:layout_toRightOf="@+id/builtupa"
+                        android:paddingLeft="5dp"
+                        android:text="Sqft"
+                        android:id="@+id/builtupaunit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:textColor="@color/black2"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/edit"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/linearbhk"
+                    android:layout_below="@+id/linearname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/s7"
+                        android:textSize="@dimen/textsize14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black2"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/listingfor"
+                        android:text="Rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:fontFamily="@font/s7"
+                        android:textSize="@dimen/textsize14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black2"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/bhk"
+                        android:text="2 BHK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:fontFamily="@font/s7"
+                        android:textSize="@dimen/textsize14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black2"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/category"
+                        android:text="Residential Land"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/s7"
+                    android:textSize="@dimen/textsize14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black2"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/categorytype"
+                    android:text="Residential Apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearbhk"/>
+
+            <LinearLayout
+                android:id="@+id/ownerpp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/categorytype"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/s7"
+                    android:textStyle="bold"
+                    android:textColor="@color/black2"
+                    android:textSize="10sp"
+                    android:id="@+id/usertype"
+                    android:text="Owner - "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/s7"
+                    android:textStyle="bold"
+                    android:textColor="@color/black2"
+                    android:textSize="9sp"
+                    android:id="@+id/fname"
+                    android:text="Rajat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/s7"
+                    android:textStyle="bold"
+                    android:textColor="@color/black2"
+                    android:textSize="9sp"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/lname"
+                    android:text="Awadhut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearblood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ownerpp">
+
+                    <ImageView
+                        android:id="@+id/location"
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:paddingLeft="6dp"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:fontFamily="@font/s7"
+                        android:textStyle="bold"
+                        android:textColor="@color/black2"
+                        android:paddingTop="3dp"
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:text="Address"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/internet"
+            android:id="@+id/nointernet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+            <TextView
+                android:textColor="@color/black2"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Please Check Your Internet Connection..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingBottom="6dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/linear"
+            android:textSize="21sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Continue"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

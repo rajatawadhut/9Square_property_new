@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.BuyService2">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_bg"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_go_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="Buy Our Services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <!--    <EditText-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:id="@+id/amount"-->
+    <!--        android:hint="Amount"-->
+    <!--        android:layout_above="@+id/payment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+
+    <!--    <Button-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:background="#3889BE"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:text="@string/Payment"-->
+    <!--        android:id="@+id/payment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:text="Available Listing Balance : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/propertylistno"
+            android:text="35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="15sp"
+            android:text=" Properties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#AFADA6"
+                    android:id="@+id/silver"
+                    android:textSize="20sp"
+                    android:text="Silver Pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Listing Property Silver Pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Facility Add More 20 Properties"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="7dp"
+                android:gravity="end"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/silverbtm"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:text="500 Rs"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FFD700"
+                    android:id="@+id/gold"
+                    android:textSize="20sp"
+                    android:text="Gold Pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Listing Property Gold Pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Facility Add More 50 Properties"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="7dp"
+                android:gravity="end"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/goldbtn"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:text="1000 Rs"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#7CD63D"
+                    android:id="@+id/platinum"
+                    android:textSize="20sp"
+                    android:text="Premium Pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Listing Property Premium Pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Facility Add More 100 Properties"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="7dp"
+                android:gravity="end"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/platinumbtn"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:text="1500 Rs"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.AboutActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_bg"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black2"
+                    android:paddingTop="5dp"
+                    android:textSize="18dp"
+                    android:text="About Us.."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:autoLink="all"
+                    android:textColor="@color/black2"
+                    android:padding="15dp"
+                    android:textSize="15sp"
+                    android:text="@string/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+<!--                <TextView-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:text="Developed By :"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:text="R.A (Android Developer)."-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:text="BlueVision Pvt Ltd."-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

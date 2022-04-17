@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPropertActivity.BasicDetails">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_above="@id/btnnext"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/radioliner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="You Are : "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/img_radius_bg"
+                        android:src="@drawable/others"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/rowner"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:id="@+id/ownert"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/img_radius_bg"
+                        android:src="@drawable/dealer"
+                        android:layout_gravity="center"
+                        android:id="@+id/rdealer"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:id="@+id/dealert"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Dealer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/img_radius_bg"
+                        android:src="@drawable/builder"
+                        android:layout_gravity="center"
+                        android:id="@+id/rbuilder"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:id="@+id/buildert"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Builder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/radioliner"
+                android:id="@+id/propertylistfor"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="List Property For:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:paddingTop="5dp"
+                    android:background="@drawable/spinner_bg"
+                    android:id="@+id/listpropertyspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/type"
+                android:layout_below="@+id/propertylistfor"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Property Type"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:background="@drawable/home_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/residential"
+                        android:text="Residential"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:background="@drawable/home_btn_bg"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:id="@+id/comercial"
+                        android:text="Commercial"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/appartment9"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/apartment"
+                        android:layout_gravity="center"
+                        android:id="@+id/appartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/appartmentt"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Appartment Flat/ Builder / Floor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/residentialland9"
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/land"
+                        android:layout_gravity="center"
+                        android:id="@+id/residentialland"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/residentiallandt"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Residential Land"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/housevilla9"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/villa"
+                        android:id="@+id/housevilla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/housevillat"
+                        android:gravity="center"
+                        android:text="House / Villa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/office9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/office"
+                                android:id="@+id/office"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/officet"
+                                android:gravity="center"
+                                android:text="Offices"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/retail9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/retail"
+                                android:id="@+id/retail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/retailt"
+                                android:gravity="center"
+                                android:text="Retail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/land9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/land"
+                                android:id="@+id/land"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/landt"
+                                android:gravity="center"
+                                android:text="Land"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/industry9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/industry"
+                                android:id="@+id/industry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/industryt"
+                                android:gravity="center"
+                                android:text="Industry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/storage9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/storage"
+                                android:id="@+id/storage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/storaget"
+                                android:gravity="center"
+                                android:text="Storage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/hospitality9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/hospitality"
+                                android:id="@+id/hospitality"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/hospitalityt"
+                                android:gravity="center"
+                                android:text="Hospitality"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/other9"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/others"
+                                android:layout_gravity="center"
+                                android:id="@+id/other"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/othert"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:text="Other"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/categorytypespin9"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Selected Type:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:background="@drawable/spinner_bg"
+                    android:paddingTop="5dp"
+                    android:id="@+id/categorytypespin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:id="@+id/willing9"
+                android:layout_below="@+id/categorytypespin9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Willing to rent out to:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkfamily"
+                        android:text="Family"
+                        android:onClick="seletedItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:onClick="seletedItem"
+                        android:id="@+id/checkmen"
+                        android:text="Single Men"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:onClick="seletedItem"
+                        android:id="@+id/checkwomen"
+                        android:text="Single Women"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Preferred Agreement Type:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioGroup
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/agremmentradio"
+                            android:text="Company Lease Agreement"
+                            android:layout_weight=".4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/anyradio"
+                            android:text="Any"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:id="@+id/pgchange9"
+                android:layout_below="@+id/willing9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="PG available for:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:id="@+id/girlpgradio"
+                            android:text="Girls"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:id="@+id/boypgradio"
+                            android:text="Boys"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:id="@+id/anypgradio"
+                            android:text="Any"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Suitable for:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <CheckBox
+                        android:onClick="seletedItem"
+                        android:layout_weight="1"
+                    android:id="@+id/studentpg"
+                    android:text="Students"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:onClick="seletedItem"
+                        android:layout_weight=".8"
+                        android:id="@+id/workingpropg"
+                        android:text="Working Professionals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Is the room Sharing or Private:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:text="Sharing"
+                            android:id="@+id/shareradiopg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:text="Private"
+                            android:id="@+id/privateradiopg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/sharingnopg9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="How many people share the room:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Spinner
+                        android:paddingTop="5dp"
+                        android:background="@drawable/spinner_bg"
+                        android:id="@+id/sharingnopgspin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_below="@+id/pgchange9"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:id="@+id/subscriptionspin9"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:text="Select Your Subscription:"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--                <Spinner-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:background="@drawable/spinner_bg"-->
+<!--                    android:id="@+id/subscriptionspin"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/home_btn_bg"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnnext"
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

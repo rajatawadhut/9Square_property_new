@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673452449680",
+    "project_id": "square-property-7d548",
+    "storage_bucket": "square-property-7d548.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673452449680:android:4e4a27edbdc8fe43dddd15",
+        "android_client_info": {
+          "package_name": "com.nine__square.property"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673452449680-pq4bdpo9sv56cumegi9341osup31l4ku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoFurylGAwdZF_DWjonLCvIda1cQOWkNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673452449680-pq4bdpo9sv56cumegi9341osup31l4ku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

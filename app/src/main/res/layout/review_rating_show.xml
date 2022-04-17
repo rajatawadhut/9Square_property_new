@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/flatlayout"
+        android:background="@drawable/review_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/answerlay"
+                android:paddingRight="5dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/review"
+                    android:textSize="15sp"
+                    android:text="I'm Fine...."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvShowMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                app:itemTextAppearance="@style/NavDrawerTextStyle"
+                android:text="Show More.."
+                android:textColor="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="left"
+                android:paddingTop="4dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/appbg"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/personq"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"/>
+                <TextView
+                    android:textSize="14sp"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:textSize="11sp"
+                    android:textColor="#B5000000"
+                    android:textStyle="normal"
+                    android:text="Rajat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:paddingRight="15dp"
+                android:paddingTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:numStars="5"
+                    android:isIndicator="false"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/ratingpoint"
+                    android:text="3.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

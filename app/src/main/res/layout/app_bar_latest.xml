@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A4E8EEE9"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.LatestActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_above="@id/footer"
+        android:layout_below="@+id/toolbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewlatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progresscustom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Avtivities.ProfileActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@color/white"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_bg"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/cardImage"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:cardCornerRadius="10dp"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:layout_width="108dp"-->
+<!--                        android:layout_height="105dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:id="@+id/profile_image"-->
+<!--                            android:src="@drawable/profileicon"-->
+<!--                            android:background="@drawable/border_background"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"/>-->
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/profileicon"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#FF000000"/>
+                    </LinearLayout>
+<!--                        <ImageView-->
+<!--                            android:layout_gravity="right"-->
+<!--                            android:src="@drawable/edit"-->
+<!--                            android:layout_width="25dp"-->
+<!--                            android:layout_height="25dp"/>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+                </FrameLayout>
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fname"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="First Name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lname"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Last Name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/number"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Mobile Number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:completionThreshold="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/country"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Country"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/statelay"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/state"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="State"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:completionThreshold="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/district"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="District"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/citylay"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/city"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="City"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Address"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="Update Profile"
+                    android:textAllCaps="false"
+                    android:padding="@dimen/dimen8dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/home_btn_bg"
+                    android:textSize="13sp"
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+<!--                <TextView-->
+<!--                    android:layout_marginBottom="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:textSize="13sp"-->
+<!--                    android:id="@+id/gotodoc"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:text="Upload Documents"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

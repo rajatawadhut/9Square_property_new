@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/latest"
+            android:icon="@drawable/ic_latest"
+            android:title="Latest" />
+
+        <item
+            android:id="@+id/buyproperty"
+            android:icon="@drawable/ic_buy"
+            android:title="Buy Property" />
+
+        <item
+            android:id="@+id/addproperty"
+            android:icon="@drawable/ic_my_property"
+            android:title="Add Property" />
+
+        <item
+            android:id="@+id/service"
+            android:icon="@drawable/ic_buy_service"
+            android:title="Buy Our Services" />
+
+        <item
+            android:id="@+id/navabout"
+            android:icon="@drawable/ic_about"
+            android:title="About Us" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting"
+            android:title="Setting" />
+
+
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_profile"
+            android:title="login" />
+
+
+    </group>
+
+
+    <!--    <item android:title="Communicate">-->
+    <!--        <menu>-->
+    <!--            <item-->
+    <!--                android:id="@+id/nav_share"-->
+    <!--                android:icon="@drawable/ic_menu_share"-->
+    <!--                android:title="djkhfjhds" />-->
+    <!--            <item-->
+    <!--                android:id="@+id/nav_send"-->
+    <!--                android:icon="@drawable/ic_menu_send"-->
+    <!--                android:title="fdgfds" />-->
+    <!--        </menu>-->
+    <!--    </item>-->
+
+</menu>

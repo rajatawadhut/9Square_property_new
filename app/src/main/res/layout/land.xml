@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/cardviewbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/propertyimage"
+                    android:src="@drawable/villa"
+                    android:background="@drawable/border_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_below="@id/cardImage"
+                android:id="@+id/linearname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="35 Lac"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/price"
+                    android:paddingLeft="20dp"
+                    android:text="15000"
+                    android:id="@+id/builtupa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_toRightOf="@+id/builtupa"
+                    android:paddingLeft="5dp"
+                    android:text="Sqft"
+                    android:id="@+id/builtupaunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/heart"
+                    android:layout_alignParentRight="true" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linearbhk"
+                android:layout_below="@+id/linearname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/land"
+                    android:text="Land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/category"
+                    android:text="Residential Land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearblood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linearbhk">
+
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:text="Address"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPropertActivity.Pricing">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Price:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="1"
+                android:id="@+id/price9"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:hint="Expected Price"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+
+                android:id="@+id/ownership9"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Ownership:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:background="@drawable/spinner_bg"
+                    android:paddingTop="5dp"
+                    android:id="@+id/ownweshipspin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:id="@+id/pricenegotiate9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:onClick="selectItem"
+                    android:id="@+id/electricCharge"
+                    android:text="Electricity And Water Charges Excluded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:onClick="selectItem"
+                    android:id="@+id/negotiable"
+                    android:text="Price Negotiable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/securitydeposit9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Security Deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Spinner
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="1"
+                    android:id="@+id/securitydepositspin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:inputType="number"
+                        android:layout_weight="1"
+                        android:id="@+id/depositea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/maintenance9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Maintenance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/maintenance"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Maintenance Price"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Spinner
+                        android:background="@drawable/spinner_bg"
+                        android:layout_weight="1"
+                        android:id="@+id/maintenancemonthlyspin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/bookingamount9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Booking Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bookingamount"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Booking Amount"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:id="@+id/facilityinprice9"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="Select Services That Are Included in Total Price:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:text="Food"
+                        android:id="@+id/food"
+                        android:onClick="selectItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <CheckBox
+                        android:text="Laundry"
+                        android:onClick="selectItem"
+                        android:id="@+id/laundry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:text="Fridge"
+                        android:onClick="selectItem"
+                        android:id="@+id/fridge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <CheckBox
+                        android:onClick="selectItem"
+                        android:id="@+id/electricity"
+                        android:text="Electricity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <CheckBox
+                        android:onClick="selectItem"
+                        android:text="None ot the above"
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:onClick="selectItem"
+                        android:id="@+id/housekeeping"
+                        android:text="Housekeeping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <CheckBox
+                        android:onClick="selectItem"
+                        android:text="DTH"
+                        android:id="@+id/dth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <CheckBox
+                        android:onClick="selectItem"
+                        android:id="@+id/water"
+                        android:text="Water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:onClick="selectItem"
+                        android:id="@+id/wifi"
+                        android:text="Wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:id="@+id/fooddetail9"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Food Details:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Select Availability of meals on weekdays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="BreakFast"
+                            android:id="@+id/breakfast"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="Lunch"
+                            android:onClick="selectItem"
+                            android:id="@+id/lunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Dinner"
+                            android:onClick="selectItem"
+                            android:id="@+id/dinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Select Availability of meals on weekends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="BreakFast"
+                            android:id="@+id/breakfast1"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="Lunch"
+                            android:onClick="selectItem"
+                            android:id="@+id/lunch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Dinner"
+                            android:onClick="selectItem"
+                            android:id="@+id/dinner1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Meal Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/veg"
+                        android:text="Veg Only"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/nonveg"
+                        android:text="Veg and Non-Veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/durationofrentag9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Duration of agreement in months"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/durationofrentag"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Duration of agreement in months"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/cotractduration9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Minimum Contract Duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contractduration"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Months"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/earlylivingcharges9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Early Living Charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/earlylivingcharges"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Price"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/monthsofnotice9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Months Of Notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/monthsofnotice"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Months Of Notice"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:id="@+id/annualduespayable9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Annual Dues Payable:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/annualduespayable"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="annual dues payable"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_margin="5dp"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_weight="1"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:id="@+id/btnnext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

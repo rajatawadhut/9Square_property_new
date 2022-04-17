@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPropertActivity.Location">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <EditText
+                    android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Search State"
+                    >
+                </EditText>
+
+
+
+
+
+                <EditText
+                    android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Search City"
+                     >
+                </EditText>
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/locality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Search Locality"
+                  />
+                <EditText
+                    android:inputType="textCapSentences"
+                    android:layout_weight="1"
+                    android:id="@+id/otherlocality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Other Locality"
+                   />
+
+            </LinearLayout>
+
+
+
+
+
+            <EditText
+                    android:layout_margin="8dp"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/projectname"
+                    android:textColor="@android:color/black"
+                    android:hint="Project Name"/>
+
+
+                <EditText
+                    android:visibility="visible"
+                    android:layout_margin="8dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address"
+                    android:textColor="@android:color/black"
+                    android:hint="Address"/>
+
+
+            <Button
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/home_btn_bg"
+                android:layout_weight="1"
+                android:text="Pick Exact Loction"
+                android:id="@+id/placepick"
+                android:textColor="@color/white"
+                android:layout_width="160dp"
+                android:layout_height="35dp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_margin="5dp"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_weight="1"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_margin="5dp"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnnext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

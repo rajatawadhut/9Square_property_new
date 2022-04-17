@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPropertActivity.Features">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/img"
+                    android:src="@drawable/nopropertyimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"/>
+
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/pickimage"
+                    android:background="@drawable/home_btn_bg"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:text="Pick Image"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:id="@+id/anemities9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Amenities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="Lift(s)"
+                            android:id="@+id/lift"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="Park"
+                            android:onClick="selectItem"
+                            android:id="@+id/park"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Maintenance Staff"
+                            android:onClick="selectItem"
+                            android:id="@+id/maintenancestaff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/visiterparking"
+                            android:text="Visiter Parking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/fengshui"
+                            android:text="Vaastu Compliant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:text="Intercome Facility"
+                            android:id="@+id/intercomefacility"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:text="Security/Fire Alaram"
+                            android:id="@+id/alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/waterstorage"
+                            android:text="Water Storage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:id="@+id/boundrywall9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Boundry Wall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioGroup
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:id="@+id/boundryyes"
+                            android:text="Yes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:id="@+id/boundryno"
+                            android:text="No"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/moreanemitiesitem9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/uparrow"
+                            android:src="@drawable/uparrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/downarrow"
+                            android:src="@drawable/downarrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:id="@+id/moreanemities"
+                            android:text="More Amenities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/moreanemitiesitem91"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="Swimming Pool"
+                            android:id="@+id/swimmingpool"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="GYM"
+                            android:onClick="selectItem"
+                            android:id="@+id/gym"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Centrally Air Conditioned"
+                            android:onClick="selectItem"
+                            android:id="@+id/ac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/garden"
+                            android:text="Garden"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/wifi"
+                            android:text="WIFI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/pipedgas"
+                            android:text="Piped-Gas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/waterpurifier"
+                            android:text="Water Purifier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:text="Club House"
+                            android:id="@+id/clubhouse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:text="Shopping Center"
+                            android:id="@+id/shoppingcenter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/waterdisposal"
+                            android:text="Water Disposal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/rainwaterharvesting"
+                            android:text="Rain Water Harvesting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/bankattachedproperty"
+                            android:text="Bank Attached Property"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/watersource9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:text="Water Source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/muncipalcorporation"
+                            android:text="Municipal Corporation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/borewell"
+                            android:text="Borewll / Tank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/overlooking9"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/overlookingtext"
+                    android:text="Over Looking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="Park/Garden"
+                            android:id="@+id/parkgarden"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="Main Road"
+                            android:onClick="selectItem"
+                            android:id="@+id/mainrood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Club"
+                            android:onClick="selectItem"
+                            android:id="@+id/club"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/lakefacing"
+                            android:text="Laking Facing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/seafacing"
+                            android:text="Sea Facing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/others"
+                            android:text="Others"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/somefeatures9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/somefeaturestext"
+                    android:text="Some Features About Your Property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="In a Gated Society"
+                            android:id="@+id/gatedsociety"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="Corner Property"
+                            android:onClick="selectItem"
+                            android:id="@+id/cornerproperty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Pet Friendly"
+                            android:onClick="selectItem"
+                            android:id="@+id/petfriendly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="WheelChair Friendly"
+                            android:onClick="selectItem"
+                            android:id="@+id/wheelchairfriendly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/facing9"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Facing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <Spinner
+                            android:paddingTop="5dp"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_weight=".8"
+                            android:id="@+id/facingspin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/facingwidth9"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight=".6"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Width of facing Road"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                            <EditText
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/widthfaceing"
+                                android:textColor="@android:color/black"
+                                android:hint="Width"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <Spinner
+                            android:paddingTop="5dp"
+                            android:background="@drawable/spinner_bg"
+                            android:id="@+id/unitspin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/typeofflooring9"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Type Of Flooring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:paddingTop="5dp"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_weight=".8"
+                        android:id="@+id/typeofflooringspin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/powerbackup9"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Power Backup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:paddingTop="5dp"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_weight=".8"
+                        android:id="@+id/powerbackupspin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/byers9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Buyers want as much information as they can get. Tell them what's unique in your property!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="24 x 7 Water"
+                            android:id="@+id/water24"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="Visiter Parking Available"
+                            android:onClick="selectItem"
+                            android:id="@+id/visiterparkingavailable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Close To School"
+                            android:onClick="selectItem"
+                            android:id="@+id/closetoschool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="Natural Light"
+                            android:onClick="selectItem"
+                            android:id="@+id/naturallight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/closetohospital"
+                            android:text="Close To Hospital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/closetomarket"
+                            android:text="Close To Market"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/closetobank"
+                            android:text="Close To Bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/airyrooms"
+                            android:text="Airy Rooms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rules1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Set some House Rules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight=".6"
+                            android:text="Pets Allowed:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RadioGroup
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/pety"
+                                android:text="Yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:id="@+id/petn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight=".6"
+                            android:text="Visitors Allowed:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RadioGroup
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/visitery"
+                                android:text="Yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:id="@+id/visitern"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight=".6"
+                            android:text="Smoking Allowed:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RadioGroup
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/smokingy"
+                                android:text="Yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:id="@+id/smokingn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    .
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight=".6"
+                            android:text="Alcohol consumption Allowed:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RadioGroup
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/alcoholy"
+                                android:text="Yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:id="@+id/alcoholn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight=".6"
+                            android:text="Housing Events/ Parties Allowed:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RadioGroup
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/eventy"
+                                android:text="Yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:id="@+id/eventn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/rule2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Last entry time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:background="@drawable/spinner_bg"
+                        android:paddingTop="5dp"
+                        android:id="@+id/lasttimespin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/descrioption9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/description"
+                            android:textColor="@android:color/black"
+                            android:hint="Description"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timesuitable9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="What time should buyers contact you ?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:text="8am - 12pm"
+                            android:id="@+id/eight12"
+                            android:onClick="selectItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:text="12pm - 3pm"
+                            android:onClick="selectItem"
+                            android:id="@+id/twele3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="3pm - 6pm"
+                            android:onClick="selectItem"
+                            android:id="@+id/three6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:onClick="selectItem"
+                            android:id="@+id/nine11"
+                            android:text="9pm - 11pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="6pm - 9pm"
+                            android:onClick="selectItem"
+                            android:id="@+id/six9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <CheckBox
+                            android:text="None"
+                            android:onClick="selectItem"
+                            android:id="@+id/none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/home_btn_bg"
+                        android:text="Back"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_margin="5dp"
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_weight="1"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnnext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

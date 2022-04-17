@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/flatlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/personq"
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/linear"
+            android:background="@drawable/cardviewbg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/namelayout"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="3"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:text="Name -"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="1"
+                    android:id="@+id/fullname"
+                    android:textSize="13sp"
+                    android:text="Rajat Awadhut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/emaillayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="3"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:text="Email -"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="1"
+                    android:id="@+id/email"
+                    android:textSize="12sp"
+                    android:text="rajatawdhut@gmail.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mobilelayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="3"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:text="Mobile -"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="1"
+                    android:id="@+id/mobile"
+                    android:textSize="12sp"
+                    android:text="9766260279"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/citylayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="3"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:text="City -"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textColor="@color/black2"
+                    android:layout_weight="1"
+                    android:id="@+id/city"
+                    android:textSize="12sp"
+                    android:text="Nagpur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:id="@+id/call_button"
+                android:paddingRight="18dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/callbg111"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/call" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

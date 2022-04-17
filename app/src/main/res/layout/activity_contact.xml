@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.ContactActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_bg"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:imeOptions="actionNext"
+                        android:completionThreshold="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nameID"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:completionThreshold="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mailID"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:completionThreshold="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phoneID"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:completionThreshold="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subjectID"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Subject"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/messageID"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Message"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:background="@drawable/home_btn_bg"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/sendmail"
+                    android:text="Send"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"/>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

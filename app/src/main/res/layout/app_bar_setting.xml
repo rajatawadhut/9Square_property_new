@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A4E8EEE9"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.SettingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/cardviewbg"
+        app:cardCornerRadius="2dp"
+        android:id="@+id/about"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/toolbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="#A1000000"
+            android:text="About Us"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="45dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/cardviewbg"
+        android:id="@+id/contact"
+        app:cardCornerRadius="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="#A1000000"
+            android:textStyle="normal"
+            android:text="Contact Us"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="45dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/cardviewbg"
+        android:id="@+id/terms"
+        app:cardCornerRadius="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="#A1000000"
+            android:textStyle="normal"
+            android:text="Terms And Conditions"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="45dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/cardviewbg"
+        android:id="@+id/privacy"
+        app:cardCornerRadius="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="#A1000000"
+            android:textStyle="normal"
+            android:text="Privacy Policy"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="45dp"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:background="@drawable/cardviewbg"-->
+<!--        android:id="@+id/moreapp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        app:cardCornerRadius="2dp"-->
+<!--        android:layout_below="@+id/privacy"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#A1000000"-->
+<!--            android:textStyle="normal"-->
+<!--            android:text="More App"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:layout_height="45dp"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/cardviewbg"
+        android:id="@+id/share"
+        app:cardCornerRadius="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="#A1000000"
+            android:textStyle="normal"
+            android:text="Share App"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:layout_height="45dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            layout="@layout/footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

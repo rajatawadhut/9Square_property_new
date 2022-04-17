@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avtivities.OwnerBuilderDeveloperList">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:paddingTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/owner"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/home_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:text="Owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:id="@+id/vowner"
+                        android:background="#050505"
+                        android:layout_width="115dp"
+                        android:layout_height="3dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/developer"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/home_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:text="Dealer"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:id="@+id/vdeveloper"
+                        android:background="#050505"
+                        android:layout_width="115dp"
+                        android:layout_height="3dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/builder"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/home_btn_bg"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:text="Builder"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:id="@+id/vbuilder"
+                        android:background="#050505"
+                        android:layout_width="115dp"
+                        android:layout_height="3dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear2"-->
+<!--            android:layout_below="@+id/linear1"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <RadioGroup-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/property"-->
+<!--                    android:text="Property"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/project"-->
+<!--                    android:text="Project"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--            </RadioGroup>-->
+<!--        </LinearLayout>-->
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear2"
+                android:layout_below="@+id/linear1"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="State"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Search State"
+                    android:gravity="center" >
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear3"
+                android:layout_below="@+id/linear2"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="City"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Search city"
+                    android:gravity="center" >
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/linear3"
+                android:id="@+id/linear4"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/search"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linear4"
+                android:id="@+id/linear5"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imga"
+            android:src="@drawable/searchiccccc"
+            android:layout_width="120dp"
+            android:layout_height="90dp"/>
+        <TextView
+            android:textSize="21dp"
+            android:gravity="center"
+            android:textColor="#4E4E4E"
+            android:layout_gravity="center"
+            android:layout_below="@+id/imga"
+            android:text="No Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progresscustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
