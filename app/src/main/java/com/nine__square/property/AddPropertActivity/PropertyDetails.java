@@ -1136,6 +1136,8 @@ public class PropertyDetails extends AppCompatActivity {
                         tvBankLoan = "2";
                     }
                     ListingData.getInstance(getApplicationContext()).addpropertydetailsChanges(flatType, edtStudioAprtNo, edtPentHouseNo,edtRowHouseNo,edtDuplexNo,edtShopNo,edtCommercialSpaceNo,tvBankLoan);
+                }else{
+                    ListingData.getInstance(getApplicationContext()).addpropertydetailsChanges("", "", "","","","","","");
                 }
 
                 if(ListingData.getInstance(getApplicationContext()).category().equals("Offices")){

@@ -338,6 +338,7 @@ public class MainActivity extends AppCompatActivity {
             });
 
 
+/*
             FirebaseMessaging.getInstance().getToken()
                     .addOnCompleteListener(new OnCompleteListener<String>() {
                         @Override
@@ -354,6 +355,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
                         }
                     });
+*/
 
 
 
