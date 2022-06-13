@@ -82,5 +82,7 @@ public class Endpoints {
     public  static final String addUserSearchData = base_url+"usersearchdata.php";
     public  static final String homeicon = base_url+"profilepic/home_icon.png";
     public  static final String payment_detail = base_url+"payment_detail.php";
+    public  static final String token_registration = base_url+"tokenregistration.php";
+    public  static final String sendMessageZoneWise = base_url+"sendMessageZoneWise.php";
 
 }

@@ -42,6 +42,7 @@ import com.nine__square.property.Adapter.RentAdapter;
 import com.nine__square.property.Adapter.SellAdapter;
 import com.nine__square.property.Adapter.ViewPagerAdapter;
 import com.nine__square.property.AddPropertActivity.BasicDetails;
+import com.nine__square.property.BuildConfig;
 import com.nine__square.property.Helper.DataForCounter;
 import com.nine__square.property.Helper.DateForMsgCounterNotification;
 import com.nine__square.property.Models.AdsDataModel;
@@ -338,24 +339,22 @@ public class MainActivity extends AppCompatActivity {
             });
 
 
-/*
+            FirebaseMessaging.getInstance().subscribeToTopic("property");
+
             FirebaseMessaging.getInstance().getToken()
                     .addOnCompleteListener(new OnCompleteListener<String>() {
                         @Override
                         public void onComplete(@NonNull Task<String> task) {
-                            if (!task.isSuccessful()) {
-                                Log.w("GetTokennnn", "Fetching FCM registration token failed", task.getException());
-                                return;
+                            if (task.isSuccessful()) {
+                                System.out.println("Gte Token ::: " + task.getResult());
+                                if(VolleySingleton.getInstance(getApplicationContext()).isLogin()){
+                                    registerToken(task.getResult());
+                                }
+
                             }
 
-                            // Get new FCM registration token
-                            String token = task.getResult();
-
-                            // Log and toast
-                            Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
                         }
                     });
-*/
 
 
 
@@ -7108,6 +7107,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void registerToken(String token){
+
+        final String loginuser;
+        loginuser = VolleySingleton.getInstance(getApplicationContext()).id();
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Endpoints.token_registration, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                System.out.println("response Token:: " +response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println(" dataataataaVersion Token:; "+ error.getMessage());
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                SmsData smsData = new SmsData();
+                Map<String, String> params = new HashMap<>();
+                params.put("header", smsData.token);
+                params.put("userid", loginuser);
+                params.put("registration_key", token);
+                return params;
+            }
+        };
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(50000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        VolleySingleton.getInstance(this).addToRequestQueue(stringRequest);
+
+    }
 
 
 

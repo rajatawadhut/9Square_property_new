@@ -198,13 +198,6 @@ public class PropertyDetails extends AppCompatActivity {
 
 
 
-        if(ListingData.getInstance(getApplicationContext()).usertype().equals("Builder")) {
-//            llDataBuilder.setVisibility(View.VISIBLE);
-        }else {
-            llDataBuilder.setVisibility(View.GONE);
-        }
-
-
         if(ListingData.getInstance(getApplicationContext()).category().equals("Offices")){
             built9.setVisibility(View.VISIBLE);
             carpet9.setVisibility(View.VISIBLE);
@@ -466,6 +459,16 @@ public class PropertyDetails extends AppCompatActivity {
             furnishedspin9.setVisibility(View.VISIBLE);
             possessionby9.setVisibility(View.VISIBLE);
         }
+
+
+
+        if(ListingData.getInstance(getApplicationContext()).usertype().equals("Builder")) {
+            llDataBuilder.setVisibility(View.VISIBLE);
+            flattype9.setVisibility(View.GONE);
+        }else {
+            llDataBuilder.setVisibility(View.GONE);
+        }
+
 
 
 

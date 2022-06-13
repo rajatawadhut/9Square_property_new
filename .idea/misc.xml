@@ -4,10 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/drawable/buy_nav.xml" value="0.1" />
+        <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/drawable/ic_serach_google_font.xml" value="0.2203125" />
+        <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/drawable/searchicon_nav.xml" value="0.2203125" />
         <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/activity_view_image.xml" value="0.1" />
-        <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/app_bar_main.xml" value="0.33" />
+        <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/footer.xml" value="0.33" />
         <entry key="..\:/Rajat/AndroidProjects/9 Square Property New/app/src/main/res/layout/fragment_pic_zoom.xml" value="0.19010416666666666" />
       </map>
     </option>

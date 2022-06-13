@@ -70,11 +70,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/add"
                 android:src="@drawable/ic_add__24dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
                 app:tint="@color/white" />
+
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:paddingTop="3dp"
+                android:text="Add"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
         </LinearLayout>
 
 
@@ -112,12 +124,15 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
-                app:tint="@color/white"
                 android:id="@+id/footers"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
                 android:src="@drawable/searchicon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                app:tint="@color/white" />
             <TextView
                 android:textSize="14dp"
                 android:textColor="@color/white"

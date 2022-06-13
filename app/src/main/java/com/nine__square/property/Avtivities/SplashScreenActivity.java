@@ -92,7 +92,10 @@ public class SplashScreenActivity extends AppCompatActivity {
                         retry.setVisibility(View.GONE);
 
                         showupdate();
-
+                        /*Intent splash = new Intent(SplashScreenActivity.this, MainActivity.class);
+                        splash.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(splash);
+                        finish();*/
                     }
                     else
                     {

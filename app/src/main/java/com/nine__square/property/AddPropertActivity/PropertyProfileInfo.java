@@ -1437,10 +1437,10 @@ public class PropertyProfileInfo extends AppCompatActivity {
                     if(obj.getBoolean("error")){
                         showmessage(obj.getString("message"));
                     }else{
+                        sendOfferMsg();
                         showmessage(obj.getString("message"));
                         ListingData.getInstance(getApplicationContext()).Logout();
                         startActivity(new Intent(PropertyProfileInfo.this, MyPropertyActivity.class));
-
 
                     }
 
@@ -1566,6 +1566,42 @@ public class PropertyProfileInfo extends AppCompatActivity {
 
     }
 
+    private void sendOfferMsg() {
+        if(ListingData.getInstance(getApplicationContext()).getOfferPrice().equals("1")) {
+            sendMessageToServer("offer");
+        }
+    }
+
+    private void sendMessageToServer(String status) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Endpoints.sendMessageZoneWise, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                System.out.println("response ::::: "+ response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(PropertyProfileInfo.this,"Something Went Wrong",Toast.LENGTH_SHORT).show();
+                Log.d("VOLLEY", String.valueOf(error));
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("loginUserId", VolleySingleton.getInstance(getApplicationContext()).id());
+                params.put("city", ListingData.getInstance(getApplicationContext()).city());
+                params.put("locality", ListingData.getInstance(getApplicationContext()).locality());
+                params.put("status", status);
+                return params;
+            }
+        };
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(50000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        VolleySingleton.getInstance(PropertyProfileInfo.this).addToRequestQueue(stringRequest);
+
+
+    }
+
 
     public void addproperty(){
 
@@ -1586,11 +1622,11 @@ public class PropertyProfileInfo extends AppCompatActivity {
                             showmessage(obj.getString("message"));
                         }else{
                             showmessage(obj.getString("message"));
+                            sendMessageToServer("add");
                             sendsubscription();
                             ListingData.getInstance(getApplicationContext()).Logout();
+                            finish();
                             startActivity(new Intent(PropertyProfileInfo.this, MainActivity.class));
-
-
 
                         }
 

@@ -588,6 +588,18 @@ public class Pricing extends AppCompatActivity {
                 annualduespayableget = annualduespayable.getText().toString().trim();
                 depositeaget = depositea.getText().toString().trim();
 
+
+                if(ListingData.getInstance(getApplicationContext()).getinstance().equals("Update") && !ListingData.getInstance(getApplicationContext()).priceget().isEmpty() && !priceget.isEmpty()){
+                    if(Integer.parseInt(ListingData.getInstance(getApplicationContext()).priceget()) > Integer.parseInt(price.getText().toString())) {
+                        ListingData.getInstance(getApplicationContext()).setOfferPrice("1");
+                    }else{
+                        ListingData.getInstance(getApplicationContext()).setOfferPrice("0");
+                    }
+                }else {
+                    ListingData.getInstance(getApplicationContext()).setOfferPrice("0");
+                }
+
+
                 if(ListingData.getInstance(getApplicationContext()).propertylistfor().equals("Sell") && ListingData.getInstance(getApplicationContext()).category().equals("Apartment/Flat/Builder Floor")){
 
                     if(priceget.isEmpty()){

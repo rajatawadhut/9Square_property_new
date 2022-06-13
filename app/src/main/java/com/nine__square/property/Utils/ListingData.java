@@ -81,7 +81,7 @@ public class ListingData {
     // PRICE
 
 
-    private static final String PRICEGET = "priceget";
+    private static final String PRICEGET = "";
     private static final String MAINTENANCEGET = "maintenanceget";
     private static final String BOOKINGAMOUNTGET = "bookingamountget";
     private static final String DURATIONOFRENTAGGET = "durationofrentagget";
@@ -108,6 +108,7 @@ public class ListingData {
     private static final String DATE = "date";
     private static final String SUBSCRIPTION = "subscription";
     private static final String POSITON = "position";
+    private static final String OFFER = "offer";
 
 
 
@@ -959,5 +960,25 @@ public class ListingData {
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(SHARED_NAME, Context.MODE_PRIVATE);
         return sharedPreferences.getString(POSITON, null);
     }
+
+
+
+
+    public boolean setOfferPrice(String offer) {
+        SharedPreferences sharedPreferences = mContext.getSharedPreferences(SHARED_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(OFFER, offer);
+        editor.apply();
+        editor.commit();
+        return true;
+    }
+
+
+    public String getOfferPrice(){
+        SharedPreferences sharedPreferences = mContext.getSharedPreferences(SHARED_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(OFFER, "");
+    }
+
+
 
 }
