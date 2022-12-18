@@ -39,8 +39,8 @@ public class SplashScreenActivity extends AppCompatActivity {
     LinearLayout nodata;
 
 
-    String API= "https://9squareproperty.com/9squareandroid/getV2Property.php";
-//    String API= "https://9squareproperty.com/9squareandroid/getVProperty.php";
+    String API= "https://9squareproperty.in/9squareandroid/getV2Property.php";
+//    String API= "https://9squareproperty.in/9squareandroid/getVProperty.php";
 //    String API= "https://unprevented-marches.000webhostapp.com/apanagharDB/getversionupdate2.php";
 
     @Override

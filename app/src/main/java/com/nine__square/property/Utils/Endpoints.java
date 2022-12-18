@@ -5,7 +5,7 @@ package com.nine__square.property.Utils;
 public class Endpoints {
 //        public static final String base_url = "https://unprevented-marches.000webhostapp.com/99AcresBlueVision/";
 //        public static final String base_url = "https://nestingindia.com/nestingandroid/";
-        public static final String base_url = "https://9squareproperty.com/9squareandroid/";
+        public static final String base_url = "https://9squareproperty.in/9squareandroid/";
 //        public static final String base_url = "http://192.168.43.148/99acres/";
     public  static final String registration = base_url+"registration.php";
     public  static final String login = base_url+"login.php";
