@@ -28,6 +28,7 @@ public class AdsViewPager extends PagerAdapter {
     private LayoutInflater layoutInflater;
     private List<AdsDataModel> sliderImg;
     private ImageLoader imageLoader;
+
     Bitmap bitmap;
 
 
